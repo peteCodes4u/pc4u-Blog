@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+        <title>PC4U-Blog</title>
+    </head>
+    <!-- Notes Framework
+        1. landing page containing a form with labels and inputs for username, blog title, and blog content 
+            => blog post data is stored to localStorage.  
+            => redirected to the posts page.
+            => form validators  username, title, or content (required) > prompts to complete the form. 
+    
+    
+        2.   posts page containing a header, with a light mode/dark mode toggle, and a "Back" button.
+            => click the light mode/dark mode toggle > page content's styles update to reflect the selection.
+            => click the "Back" button > edirected back to the landing page where I can input more blog entries.
+            => main content - list of blog posts that are pulled from localStorage.
+            => localStorage > JSON array of blog post objects, each including the:
+                => post author's username, 
+                => title of the post, 
+                => post's content.
+            => single blog entry in the list > the title, the content, and the author of the post
+            => footer - link to the PJS-portfolio 
+    End notes framework -->
+    <!-- part 1 content : User Form for blog entry [username, blog title, blog content, submit button] -->
+    <body>
+        <form id="blog-entry-form"></form>
+    <!-- part 2 content : blog post enties display -->
+            <!-- part 2.1 content : header with light/dark mode toggle and back button -->
+            <header>
+                <!-- part 2.1A content : checkbox to toggle light/dark mode setting -->
+                <nav>
+                    <h1>PC4U Blog</h1>
+                    <setction id="checkbox-section">
+                        <div>
+                            <div>
+                              <p>Select to enable DARK MODE</p>
+                            </div>
+                            <label id="theme-switch">
+                              <input type="checkbox" id="mode-switcher">
+                            </label>
+                          </div>
+                    <!-- part 2.1B content : back button to return user to blog post entry form -->                       
+                    </setction id="back-button-section">
+                    <section>
+                        <button id="back-button">Add New Blog Post</button>
+                    </section>
+                </nav>
+            </header>
+            </nav>
+    <main id="blog-post-page">
+        <article class="blog-article">
+            <h2>Blog Title 1</h2>
+            <section>
+                <p>Blog 1 content</p>
+            </section>
+        </article>
+        <article class="blog-article">
+            <h2>Blog Title 2</h2>
+            <section>
+                <p>Blog 2 content</p>
+            </section>
+        </article>
+        <article class="blog-article">
+            <h2>Blog Title 3</h2>
+            <section>
+                <p>Blog 3 content</p>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p href=""><span class="bold">Portfolio: </span>PJS-portfolio</p>
+        <p><span class="bold">Blog: </span>PC4U Blog</p>
+        <p><span class="bold">Email: </span>PC4U Blog</p>  
+    </footer>
+    </body>
+
