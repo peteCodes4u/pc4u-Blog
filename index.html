@@ -10,7 +10,8 @@
         1. landing page containing a form with labels and inputs for username, blog title, and blog content 
             => blog post data is stored to localStorage.  
             => redirected to the posts page.
-            => form validators  username, title, or content (required) > prompts to complete the form. 
+            => form validators  username, title, or content (required) > prompts to complete the form.
+            => (part A.) header with a light mode/dark mode toggle, ("back" button hidden).
     
     
         2.   posts page containing a header, with a light mode/dark mode toggle, and a "Back" button.
@@ -24,56 +25,74 @@
             => single blog entry in the list > the title, the content, and the author of the post
             => footer - link to the PJS-portfolio 
     End notes framework -->
-    <!-- part 1 content : User Form for blog entry [username, blog title, blog content, submit button] -->
-    <body>
-        <form id="blog-entry-form"></form>
-    <!-- part 2 content : blog post enties display -->
-            <!-- part 2.1 content : header with light/dark mode toggle and back button -->
+
+
+            <!-- part A content : header with light/dark mode toggle and back button -->
             <header>
-                <!-- part 2.1A content : checkbox to toggle light/dark mode setting -->
+                <!-- part A.1 content : checkbox to toggle light/dark mode setting -->
                 <nav>
-                    <h1>PC4U Blog</h1>
+                    <h1>PC4U blog</h1>
                     <setction id="checkbox-section">
-                        <div>
-                            <div>
-                              <p>Select to enable DARK MODE</p>
-                            </div>
-                            <label id="theme-switch">
-                              <input type="checkbox" id="mode-switcher">
-                            </label>
-                          </div>
-                    <!-- part 2.1B content : back button to return user to blog post entry form -->                       
+                        <label id="theme-switch"><a>Select to enable DARK MODE</a><input type="checkbox" id="mode-switcher"></label>                                                                   
                     </setction id="back-button-section">
+                    <!-- part A.2 content : back button to return user to blog post entry form -->
                     <section>
-                        <button id="back-button">Add New Blog Post</button>
+                        <button id="back-button">Back</button>
                     </section>
                 </nav>
             </header>
             </nav>
+    <body>
+        <!-- part 1 content : User Form for blog entry [username, blog title, blog content, submit button] -->
+        <form id="blog-entry-form">
+            <p>
+                <label for="username">username: </label>
+                <input id="username" type="text" placeholder="User Name"/>
+            </p>
+            <p>
+                <label for="blog-article-title">article title: </label>
+                <input id="username" type="text" placeholder="User Name"/>
+            </p>
+            <p>
+                <label for="username">content: </label>
+                <textarea id ="content" placeholder="blog post content"></textarea>
+            </p>
+            <p>
+                <button>Post Blog</button>
+            </p>
+        </form>
+
+    <!-- part 2 content : blog post enties display -->
     <main id="blog-post-page">
         <article class="blog-article">
-            <h2>Blog Title 1</h2>
+            <h3>Blog Title 1</h3>
             <section>
                 <p>Blog 1 content</p>
             </section>
         </article>
         <article class="blog-article">
-            <h2>Blog Title 2</h2>
+            <h3>Blog Title 2</h3>
             <section>
                 <p>Blog 2 content</p>
             </section>
         </article>
         <article class="blog-article">
-            <h2>Blog Title 3</h2>
+            <h3>Blog Title 3</h3>
             <section>
                 <p>Blog 3 content</p>
             </section>
         </article>
     </main>
     <footer>
-        <p href=""><span class="bold">Portfolio: </span>PJS-portfolio</p>
-        <p><span class="bold">Blog: </span>PC4U Blog</p>
-        <p><span class="bold">Email: </span>PC4U Blog</p>  
+        <p>
+            <a><span class="bold">portfolio: </span></a><a href="https://petecodes4u.github.io/PJS-Portfolio/">PJS-portfolio</a>
+        </p>
+        <p>
+            <a><span class="bold">blog: </span>PC4U Blog</a>
+        </p>
+        <p>
+            <a><span class="bold">email: </span>peter.appliedanalyticalsciences@gmail.com</a>
+        </p>
     </footer>
     </body>
 
