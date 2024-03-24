@@ -1,0 +1,14 @@
+header {
+    background-color: blueviolet;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#checkbox-section {
+    display: flex;
+    align-items: center;
+}

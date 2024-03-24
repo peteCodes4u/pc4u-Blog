@@ -8,5 +8,7 @@
 // 2.4 confirm rendered to complete the form.
 // 3. (part A.) header with a light mode/dark mode toggle, ("back" button hidden).
 
-const toggleButton1 = document.getElementById("toggleButton1");
-toggleButton1.addEventListener("click", function() {window.location.href= "./pc4u-blog-posts.html"});
+
+
+
+
