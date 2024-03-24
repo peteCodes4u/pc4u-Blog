@@ -1,23 +1,35 @@
+/* sets header gradient */
 header {
-    background-image:linear-gradient(to left, #743ad5, #3ab1d5);
-
-    
+    background-image:linear-gradient(to left, #743ad5, #3ab1d5); 
+    /* mix-blend-mode: overlay;    */
 }
 
+/* sets h1 style */
+h1 {
+    margin-left: 50px;
+    background-image:linear-gradient(to left,#d5853a, #743ad5 );
+    padding: 25px;
+}
+
+/* sets bacground gradient */
+body {
+    background-image:linear-gradient(to left,#d5853a, #743ad5 );    
+}
+
+/* sets additional header settings */
 nav {
     display: flex;
     justify-content: space-between;
-    -webkit-text-fill-color: aqua;
+    -webkit-text-fill-color: #ffff;
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 1px;
     text-shadow: 2px 3px 4px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
     font-weight: bold;
-
-    
 }
 
+/* sets dark mode checkbox location */
 #checkbox-section {
     display: flex;
     align-self: center;
@@ -27,14 +39,55 @@ nav {
     
 }
 
-#blog-entry-form, #post-button {
+/* sets userform content + image gif */
+#landing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 100px;
+
+ }
+
+ /* sets blog entry form style settings */
+#blog-entry-form {
    display:flex;
    flex-direction: column;
    align-items: center;
+   -webkit-text-fill-color: #3ab1d5;
+   text-shadow: 2px 3px 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* sets userform border  */
+#form {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, #743ad5, #3ab1d5);
+}
+
+/* sets userform border size */
+#blog-entry-form {
+    display: flex;
+    padding: 23px;
+}
+
+#post-button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 150px;
+
 }
 
 #entry-portal-image {
-    display: flex;
-    justify-content: right;
+    
+
+    justify-content: center;
+    height: 400px;
+    width: 500px;
+    justify-content: center;
     background-image: url("../images/FractalSkull_2.gif");
 }
