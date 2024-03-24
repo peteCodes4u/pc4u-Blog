@@ -1,12 +1,44 @@
-header {
+/* sets baground color gradient for the blog article page body */
+body {
     background-image:linear-gradient(to left, #743ad5, #3ab1d5);
 }
 
+/* sets the styling for the blog header */
+h1 {
+    display:flex;
+    text-align: center;
+    margin-left: 25px;
+    background-image:linear-gradient(to left,#d5853a, #743ad5 );
+    padding: 5px;
+    padding-bottom: 25px;
+    font-size: 75px;
+    text-shadow: 0 1px 0 #3ab1d5, 0 2px 0 #3ab1d5,
+    0 3px 0 #3ab1d5, 0 4px 0 #3ab1d5,
+    0 5px 0 #3ab1d5, 0 6px 0 #3ab1d5,
+    0 7px 0 #3ab1d5, 0 8px 0 #3ab1d5,
+    0 9px 0 #3ab1d5, 0 10px 0 #3ab1d5,
+    0 11px 0 #3ab1d5, 0 12px 0 #3ab1d5,
+    0 20px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 3px 20px;
+    border-radius: 20px;
+}
+
+/* executes animation on dark mode cursor hover */
+ #checkbox-section:hover {
+    text-shadow: 0 1px 0 #3ab1d5, 0 2px 0 #3ab1d5,
+        0 3px 0 #3ab1d5, 0 4px 0 #3ab1d5,
+        0 5px 0 #3ab1d5, 0 6px 0 #3ab1d5,
+        0 7px 0 #3ab1d5, 0 8px 0 #3ab1d5,
+        0 9px 0 #3ab1d5, 0 10px 0 #3ab1d5,
+        0 11px 0 #3ab1d5, 0 12px 0 #3ab1d5,
+        0 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* sets the styling for elements in the header nav section */
 nav {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    -webkit-text-fill-color: aqua;
+    -webkit-text-fill-color: #ffff;
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 1px;
     text-shadow: 2px 3px 4px;
@@ -15,6 +47,7 @@ nav {
     font-weight: bold;
 }
 
+/* sets the position and styling for dark mode checkbox */
 #checkbox-section {
     display: flex;
     align-self: center;
@@ -23,9 +56,56 @@ nav {
     margin-left: 65%;
 }
 
+/* sets the position for back button in the nav section */
 #go-back {
     display: flex;
-    justify-self: center;
-    
+    justify-self: center; 
 }
+
+/* sets the alignment for the main articles */
+#blog-post-page {
+    display: flex;
+    flex-direction: column;
+}
+
+/* sets the style for the blog articles */
+.blog-article {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding-left: 15px;
+    background-color: #ffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left,#d5853a, #743ad5 );
+    box-shadow: 2px 3px 20px;
+}
+
+/* sets the styling for the blog post titles */
+.blog-title {
+    align-self: start;
+    border: 5px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, #743ad5, #3ab1d5);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+/* sets the styling for the footer */
+footer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* applies bolding to spans in the footer */
+.bold {
+    font-weight: bold;
+}
+
+
+
 
