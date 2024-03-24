@@ -1,14 +1,40 @@
 header {
-    background-color: blueviolet;
+    background-image:linear-gradient(to left, #743ad5, #3ab1d5);
+
+    
 }
 
 nav {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    -webkit-text-fill-color: aqua;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+    text-shadow: 2px 3px 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+
+    
 }
 
 #checkbox-section {
     display: flex;
-    align-items: center;
+    align-self: center;
+    justify-self: end;
+    font-size: 20px;
+    margin-left: 65%;
+    
+}
+
+#blog-entry-form, #post-button {
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#entry-portal-image {
+    display: flex;
+    justify-content: right;
+    background-image: url("../images/FractalSkull_2.gif");
 }
