@@ -15,9 +15,10 @@ themeSwitch.addEventListener('click', function () {
 })
 
 // local storage (poc) solution
+const username = document.getElementById('username');
 const blogTitle = document.getElementById('blog-title');
 const blogContent = document.getElementById('blog-content');
-const username = document.getElementById('username');
+
 
 
 
