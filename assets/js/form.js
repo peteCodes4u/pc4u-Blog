@@ -14,12 +14,51 @@ themeSwitch.addEventListener('click', function () {
     }
 })
 
-// post blog button 
+// local storage (poc) solution
+const blogTitle = document.getElementById('blog-title');
+const blogContent = document.getElementById('blog-content');
+const username = document.getElementById('username');
 
+
+
+// post blog button 
+const postBlog = document.getElementById("post-blog");
+
+postBlog.addEventListener("click", function() {
+   
+   
+    const bolgPostContent = {
+        user: username.value,
+        title: blogTitle.value,
+        content: blogContent.value,
+    };
+
+    // setItem to local storage
+    localStorage.setItem('bolgPostContent', JSON.stringify(bolgPostContent));
+
+    //require user to complete form
+    if(
+        (blogTitle.value == "") && (blogContent.value == "")  && (username.value == "") || 
+        (blogTitle.value == "") || (blogContent.value == "") || (username.value == "")
+    
+    ) {
+        // Alert user to complete the user form
+         alert("ssssheeesh! your're doing it wrong")
+        
+
+    } else {
+    
+    // redirect to blog page after successful completion of form data entry
+    window.location.href= "./blog.html"
+    };
+    
+    
+
+
+})
+
+// back-button
 document.getElementById("back-button").style.display= "none";
 
-const postBlog = document.getElementById("post-blog");
-postBlog.addEventListener("click", function() {
-    window.location.href= "./blog.html"
-})
+
 
