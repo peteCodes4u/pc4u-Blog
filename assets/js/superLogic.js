@@ -24,13 +24,10 @@ const blogTitle = document.getElementById('blog-title');
 const blogContent = document.getElementById('blog-content');
 
 const postItem = {
-
 username: username.value,
 title: blogTitle.value,
 content: blogContent.value,
 }
 
-
 addNuBlogPost(postItem);
-
-})
+});

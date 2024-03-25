@@ -40,9 +40,9 @@ h1 {
         0 20px 30px rgba(0, 0, 0, 0.5);
 }
 /* sets bacground gradient */
-/* body {
+body {
     background-image:linear-gradient(to left,#d5853a, #743ad5 );    
-} */
+}
 
 /* sets additional header settings */
 nav {
@@ -131,7 +131,7 @@ nav {
     background-image:linear-gradient(to right, #221140, #184e5e); 
 }
 
-.dark #body {
+.dark body {
     background-image:linear-gradient(to left,#371a67, #000000 );
 }
 
@@ -188,3 +188,4 @@ nav {
      font-size: 30px;
      font-weight: bold;
  }
+
