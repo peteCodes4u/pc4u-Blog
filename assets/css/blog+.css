@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+
+/* formats the body of the blog posts page */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: linear-gradient(to left, #d5853a, #743ad5);
+    margin: 0;
+}
+
+/* formats the header section */
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    text-align: left;
+    background-image: linear-gradient(to left, #743ad5, #3ab1d5);
+    color: #fff;
+}
+
+/* establishes style on PC4U header text  */
+h1 {
+    background-image: linear-gradient(to left, #d5853a, #743ad5);
+    width: fit-content;
+    padding: 5px;
+    padding-bottom: 25px;
+    font-size: 60px;
+    text-shadow:
+        0 1px 0 #3ab1d5, 0 2px 0 #3ab1d5,
+        0 3px 0 #3ab1d5, 0 4px 0 #3ab1d5,
+        0 5px 0 #3ab1d5, 0 6px 0 #3ab1d5,
+        0 7px 0 #3ab1d5, 0 8px 0 #3ab1d5,
+        0 9px 0 #3ab1d5, 0 10px 0 #3ab1d5,
+        0 11px 0 #3ab1d5, 0 12px 0 #3ab1d5,
+        0 20px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 3px 20px;
+    border-radius: 20px;
+}
+
+/* formats the Dark Mode checkbox */
+#checkbox-section {
+    display: flex;
+    font-size: 20px;
+}
+
+/* https://www.geeksforgeeks.org/create-a-3d-text-effect-using-html-and-css/ */
+#checkbox-section:hover {
+
+
+    text-shadow: 0 1px 0 #743ad5, 0 2px 0 #743ad5,
+    0 3px 0 #743ad5, 0 4px 0 #743ad5,
+    0 5px 0 #743ad5, 0 6px 0 #743ad5,
+    0 7px 0 #743ad5, 0 8px 0 #743ad5,
+    0 9px 0 #743ad5, 0 10px 0 #743ad5,
+    0 11px 0 #743ad5, 0 12px 0 #743ad5,
+    0 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* sets the possition of the back button */
+#go-back {
+    display: flex;
+    align-self: end;
+}
+
+/* establishes properties to optimize responsive design */
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* formats the blog posts section */
+.blogPosts {
+    flex: 4;
+    flex-direction: column;
+    background-image: linear-gradient(to left, #d5853a, #743ad5);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+
+/* formats the blog articles */
+.blog {
+    margin: 10px;
+    padding: 10px;
+    flex: 0 0 400px;
+    font-size: 20px;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to right,#d5853a, #743ad5 );
+    box-shadow: 2px 3px 20px;  
+}
+
+/* sets the styling for the blog post titles */
+.blog-title {
+    align-self: start;
+    border: 5px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, #743ad5, #3ab1d5);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+/* sets header away from edge of view port */
+.blog header {
+    padding: 20px;
+}
+
+/* sets the styling for the footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: linear-gradient(to left, #743ad5, #3ab1d5);
+}
+
+footer p {
+    margin-left: 50px;
+}
+
+/* applies bolding to spans in the footer */
+.bold {
+    font-weight: bold;
+}
+
+/* dark mode */
+.dark {
+    background-image:linear-gradient(to left,#371a67, #000000 );
+    height: 100vh;
+  }
+
+.dark header {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    text-align: left;
+    background-image:linear-gradient(to right, #221140, #184e5e); 
+    color: #fff;    
+}
+
+.dark h1 {
+    background-image:linear-gradient(to right,#3ad566, #4e15b2);
+    width: fit-content;
+    padding: 5px;
+    padding-bottom: 25px;
+    font-size: 60px;
+    text-shadow: 
+    0 1px 0 #1ce830, 0 2px 0 #1ce830,
+    0 3px 0 #1ce830, 0 4px 0 #1ce830,
+    0 5px 0 #1ce830, 0 6px 0 #1ce830,
+    0 7px 0 #1ce830, 0 8px 0 #1ce830,
+    0 9px 0 #1ce830, 0 10px 0 #1ce830,
+    0 11px 0 #1ce830, 0 12px 0 #1ce830,
+    0 20px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 3px 20px;
+    border-radius: 20px;
+}
+
+.dark #checkbox-section:hover {
+    text-shadow: 0 1px 0 #1ce830, 0 2px 0 #1ce830,
+    0 3px 0 #1ce830, 0 4px 0 #1ce830,
+    0 5px 0 #1ce830, 0 6px 0 #1ce830,
+    0 7px 0 #1ce830, 0 8px 0 #1ce830,
+    0 9px 0 #1ce830, 0 10px 0 #1ce830,
+    0 11px 0 #1ce830, 0 12px 0 #1ce830,
+    0 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+.dark .blogPosts {
+    flex: 4;
+    flex-direction: column;
+    background-image:linear-gradient(to left, #221140, #00080a); 
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+
+.dark .blog-title, .dark .blogPosts {
+    -webkit-text-fill-color: #14b324;
+}
+
+.dark footer {
+    background-image: linear-gradient(to right, #221140, #184e5e);
+    -webkit-text-fill-color: #14b324;
+}
+
+
+/* media query to establish responsive design capabilities */
+@media screen and (max-width: 768px) {
+
+    main,
+    nav {
+        flex-direction: column;
+    }
+}
