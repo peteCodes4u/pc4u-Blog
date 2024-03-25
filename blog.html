@@ -1,49 +1,28 @@
 <!DOCTYPE html>
-<html lang="en-us">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" type="text/css" href="./assets/css/blog.css">
-        <title>PC4U-Blog</title>
-    </head>
-    <!-- Notes Framework
-        1. landing page containing a form with labels and inputs for username, blog title, and blog content 
-            => blog post data is stored to localStorage.  
-            => redirected to the posts page.
-            => form validators  username, title, or content (required) > prompts to complete the form.
-            => (part A.) header with a light mode/dark mode toggle, ("back" button hidden).
-    
-    
-        2.   posts page containing a header, with a light mode/dark mode toggle, and a "Back" button.
-            => click the light mode/dark mode toggle > page content's styles update to reflect the selection.
-            => click the "Back" button > edirected back to the landing page where I can input more blog entries.
-            => main content - list of blog posts that are pulled from localStorage.
-            => localStorage > JSON array of blog post objects, each including the:
-                => post author's username, 
-                => title of the post, 
-                => post's content.
-            => single blog entry in the list > the title, the content, and the author of the post
-            => footer - link to the PJS-portfolio 
-    End notes framework -->
-
-            <!-- part A content : header with light/dark mode toggle and back button -->
-                <header class = "container light">
-                    <!-- part A.1 content : checkbox to toggle light/dark mode setting -->
-                    <nav>
-                        <h1>PC4U blog</h1>
-                        <setction id="checkbox-section">
-                            <label id="theme-switch"><a>DARK MODE</a><input type="checkbox" id="mode-switcher"></label>                                                                   
-                        </setction id="back-button-section">
-                        <!-- part A.2 content : back button to return user to blog post entry form -->
-                        <section id="go-back">
-                            <button id="back-button">Back</button>
-                        </section>
-                        
-                    </nav>
-                </header>
-                </nav>
-        <body class = "container light">
-            <main id="blog-post-page">
+<html>
+  <head>
+    <title>PC4U-Blog-Posts</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/blog.css" />
+  </head>
+  <div class="container light">
+    <body>
+        <!-- Header -->
+        <header>
+            <h1>PC4U blog</h1>
+            <setction id="checkbox-section">
+                <label id="theme-switch"><a>DARK MODE</a><input type="checkbox" id="mode-switcher"></label>                                                                   
+            </setction id="back-button-section">
+            <!-- part A.2 content : back button to return user to blog post entry form -->
+            <section id="go-back">
+                <button id="back-button">Back</button>
+            </section>
+        </header>
+        <!-- Body -->
+        <main>
+          <div class="blogPosts">
+            <section class="blog">
                 <article class="blog-article">
                     <section class="blog-title">
                         <h3>Blog Title 1</h3>
@@ -54,8 +33,9 @@
                     <section class="user">
                         <p>peter.appliedanalyticalsciences@gmail.com</p>
                     </section>
-    
                 </article>
+            </section>
+            <section class="blog">
                 <article class="blog-article">
                     <section class="blog-title">
                         <h3>Blog Title 2</h3>
@@ -67,6 +47,8 @@
                         <p>peter.appliedanalyticalsciences@gmail.com</p>
                     </section>
                 </article>
+            </section>
+            <section class="blog">
                 <article class="blog-article">
                     <section class="blog-title">
                         <h3>Blog Title 3</h3>
@@ -75,23 +57,26 @@
                         <p>Blog 3 content</p>
                     </section>
                     <section class="user">
-                        <p>posted by: peter.appliedanalyticalsciences@gmail.com</p>
+                        <p>peter.appliedanalyticalsciences@gmail.com</p>
                     </section>
                 </article>
-            </main>
-            <footer id="blog-footer">
-                <p>
-                    <a><span class="bold">portfolio: </span></a><a href="https://petecodes4u.github.io/PJS-Portfolio/">PJS-portfolio</a>
-                </p>
-                <p>
-                    <a><span class="bold">blog: </span>PC4U Blog</a>
-                </p>
-                <p>
-                    <a><span class="bold">email: </span>peter.appliedanalyticalsciences@gmail.com</a>
-                </p>
-            </footer>
-            <script src="./assets/js/blog.js"></script>
-            </body>
-
-
-    
+            </section>
+          </div>
+        </main>
+        <!-- Footer -->
+        <footer id="blog-footer">
+            <p>
+                <a><span class="bold">portfolio: </span></a><a href="https://petecodes4u.github.io/PJS-Portfolio/">PJS-portfolio</a>
+            </p>
+            <p>
+                <a><span class="bold">blog: </span>PC4U Blog</a>
+            </p>
+            <p>
+                <a><span class="bold">email: </span>peter.appliedanalyticalsciences@gmail.com</a>
+            </p>
+        </footer>
+        <script src="./assets/js/blog.js"></script>
+      </body>
+  </div>
+  
+</html>

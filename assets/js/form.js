@@ -1,5 +1,3 @@
-// hide back-button
-document.getElementById("back-button").style.display= "none";
 
 // dark mode toggle
 const themeSwitch = document.getElementById("mode-switcher");
