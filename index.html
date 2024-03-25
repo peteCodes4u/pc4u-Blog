@@ -1,57 +1,50 @@
 <!DOCTYPE html>
-<html lang="en-us">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" type="text/css" href="./assets/css/style+.css">
-        <title>PC4U-Blog</title>
-        
-    </head>
-    <!-- Notes Framework
-        1. landing page containing a form with labels and inputs for username, blog title, and blog content 
-            => blog post data is stored to localStorage.  
-            => redirected to the posts page.
-            => form validators  username, title, or content (required) > prompts to complete the form.
-            => (part A.) header with a light mode/dark mode toggle, ("back" button hidden).
-    
-    
-        2.   posts page containing a header, with a light mode/dark mode toggle, and a "Back" button.
-            => click the light mode/dark mode toggle > page content's styles update to reflect the selection.
-            => click the "Back" button > edirected back to the landing page where I can input more blog entries.
-            => main content - list of blog posts that are pulled from localStorage.
-            => localStorage > JSON array of blog post objects, each including the:
-                => post author's username, 
-                => title of the post, 
-                => post's content.
-            => single blog entry in the list > the title, the content, and the author of the post
-            => footer - link to the PJS-portfolio 
-    End notes framework -->
-
-            <!-- part A content : header with light/dark mode toggle and back button -->
-<div class = "container light">
-
-
-    <header>
-        <!-- part A.1 content : checkbox to toggle light/dark mode setting -->
-        <nav>
-            <h1>PC4U blog</h1>
-            <setction id="checkbox-section">
+<html>
+  <head>
+    <title>PC4U Blog</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/form.css" />
+  </head>
+  
+    <!-- Header -->
+    <div class ="container light">
+        <body>
+            <header>
+                <h1>PC4U Blog</h1>
+                <setction id="checkbox-section">
                 <label id="theme-switch"><a>DARK MODE</a><input type="checkbox" id="mode-switcher"></label>                                                                   
-            </setction>
-            <section>
-                <button id="back-button">Back</button>
+                </setction>
+            </header>
+    <!-- part 1 content : User Form for blog entry [username, blog title, blog content, submit button] -->
+    <!-- Body -->
+    <main>
+      <!-- Product Cards -->
+      <div class="formLanding">
+        <section id="entry-portal-image"><a></a></section>
+        <section class="form">
+            <section id="userform">
+                <form id="blog-entry-form">
+                    <p>
+                        <label for= "username" >username: </label>
+                        <input id="username" type="text" placeholder="user name"/>
+                    </p>
+                    <p>
+                        <label for= "blog-title" >article title: </label>
+                        <input id= "blog-title" type="text" placeholder="article title"/>
+                    </p>
+                    <p>
+                        <label for="blog-content" >content: </label>
+                        <textarea id ="blog-content" placeholder="blog post content"></textarea>
+                    </p>
+                </form>
+                <section id="post-button"><button id="post-blog">Post Blog</button></section>
             </section>
-        </nav>
-    </header>
-    </nav>
-<!-- part 1 content : User Form for blog entry [username, blog title, blog content, submit button] -->
-<section id="landing">
-<section id="entry-portal-image"><h2></h2></section>
-3ju4h3
-</section>
-
-</div>
-
-<script src="./assets/js/form.js" ></script>
-
-</html> 
+        </section>
+      </div>
+    </main>
+    <script src="./assets/js/form.js" ></script>
+  </body>
+    </div>
+   
+</html>
