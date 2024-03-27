@@ -1,50 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>PC4U Blog</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/form.css" />
-  </head>
-  
-    <!-- Header -->
-    <div class ="container light">
-        <body>
-            <header>
-                <h1>PC4U Blog</h1>
-                <setction id="checkbox-section">
-                <label id="theme-switch"><a>DARK MODE</a><input type="checkbox" id="mode-switcher"></label>                                                                   
-                </setction>
-            </header>
+
+<head>
+  <title>PC4U Blog</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/form.css" />
+</head>
+
+<!-- Header -->
+<div class="container light">
+
+  <body>
+    <header>
+      <h1>PC4U Blog</h1>
+      <setction id="checkbox-section">
+        <label id="theme-switch"><a>DARK MODE</a><input type="checkbox" id="mode-switcher"></label>
+      </setction>
+    </header>
     <!-- part 1 content : User Form for blog entry [username, blog title, blog content, submit button] -->
     <!-- Body -->
     <main>
-      <!-- Product Cards -->
-      <div class="formLanding">
+      <!-- Main content -->
+      <div class="formLanding" id="fullForm">
         <section id="entry-portal-image"><a></a></section>
         <section class="form">
-            <section id="userform">
-                <form id="blog-entry-form">
-                    <p>
-                        <label for= "username" >username: </label>
-                        <input id="username" type="text" placeholder="user name"/>
-                    </p>
-                    <p>
-                        <label for= "blog-title" >article title: </label>
-                        <input id= "blog-title" type="text" placeholder="article title"/>
-                    </p>
-                    <p>
-                        <label for="blog-content" >content: </label>
-                        <textarea id ="blog-content" placeholder="blog post content"></textarea>
-                    </p>
-                </form>
-                <section id="post-button"><button id="post-blog">Post Blog</button></section>
-            </section>
+          <section id="userform">
+            <form id="blog-entry-form">
+              <p>
+                <label for="username">username: </label>
+                <input id="username" type="text" placeholder="user name" />
+              </p>
+              <p>
+                <label for="blog-title">article title: </label>
+                <input id="blog-title" type="text" placeholder="article title" />
+              </p>
+              <p>
+                <label for="blog-content">content: </label>
+                <textarea id="blog-content" placeholder="blog post content"></textarea>
+              </p>
+            </form>
+            <section id="post-button"><button id="post-blog">Post Blog</button></section>
+          </section>
         </section>
       </div>
     </main>
-    <script src="./assets/js/form.js" ></script>
+    <script src="./assets/js/nuLogic.js"></script>
   </body>
-    </div>
-   
+</div>
 </html>
