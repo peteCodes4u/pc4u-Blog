@@ -60,8 +60,8 @@ h1 {
 /* sets style for ornimental entry portal gif  */
 #entry-portal-image {
     justify-content: center;
-    height: 400px;
-    width: 500px;
+    height: 350px;
+    width: 450px;
     justify-content: center;
     background-image: url("../images/FractalSkull_2.gif");
     box-shadow: 2px 3px 100px;
@@ -161,7 +161,7 @@ h1 {
 
 
 /* media query to apply responsive design behavior to app  */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 360px) {
     main,
     nav {
       flex-direction: column;

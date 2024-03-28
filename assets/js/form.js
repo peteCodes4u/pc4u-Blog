@@ -15,7 +15,6 @@ themeSwitch.addEventListener('click', function () {
     }
 })
 
-
 // blog post content local storage solution 
 let postItem = {};
 
@@ -61,9 +60,20 @@ postBlog.addEventListener("click", function() {
 
     } else {
     
-    // add post item
+    // add postItem to localstorage as key post
     addNuBlogPost(postItem);
+
     // redirect to blog page after successful completion of form data entry
     window.location.href= "./blog.html"
     };
+
+    // create element from local storage postItem
+    const tagName = 'div'
+    const writePost = () => {
+    document.createElement(tagName)
+    document.body.appendChild(tagName)
+    }
+    writePost();
+
 })
+

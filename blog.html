@@ -1,72 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>PC4U-Blog-Posts</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="./assets/css/blog.css" />
-  </head>
-  <div class="container light">
+</head>
+<div class="container light">
     <body>
         <!-- Header -->
         <header>
             <h1>PC4U blog</h1>
             <setction id="checkbox-section">
-                <label id="theme-switch"><a>DARK MODE</a><input type="checkbox" id="mode-switcher"></label>                                                                   
+                <label id="theme-switch"><a>DARK MODE</a><input type="checkbox" id="mode-switcher"></label>
             </setction id="back-button-section">
-            <!-- part A.2 content : back button to return user to blog post entry form -->
+            <!-- back button to return user to blog post entry form -->
             <section id="go-back">
                 <button id="back-button">Back</button>
             </section>
         </header>
         <!-- Body -->
-        <main>
-          <div class="blogPosts">
-            <section class="blog">
-                <article class="blog-article">
-                    <section class="blog-title">
-                        <h3>Blog Title 1</h3>
-                    </section>
-                    <section class="blog-content">
-                        <p>Blog 1 content</p>
-                    </section>
-                    <section class="user">
-                        <p>peter.appliedanalyticalsciences@gmail.com</p>
-                    </section>
-                </article>
-            </section>
-            <section class="blog">
-                <article class="blog-article">
-                    <section class="blog-title">
-                        <h3>Blog Title 2</h3>
-                    </section>
-                    <section class="blog-content">
-                        <p>Blog 2 content</p>
-                    </section>
-                    <section class="user">
-                        <p>peter.appliedanalyticalsciences@gmail.com</p>
-                    </section>
-                </article>
-            </section>
-            <section class="blog">
-                <article class="blog-article">
-                    <section class="blog-title">
-                        <h3>Blog Title 3</h3>
-                    </section>
-                    <section class="blog-content">
-                        <p>Blog 3 content</p>
-                    </section>
-                    <section class="user">
-                        <p>peter.appliedanalyticalsciences@gmail.com</p>
-                    </section>
-                </article>
-            </section>
-          </div>
+        <main id="main-content">
+            <div id="blogContainer" class="blogPosts">
+                <section id="post" class="blog">
+                    <article class="blog-article">
+                        <section class="blog-title">
+                            <h3>Blog Title 1</h3>
+                        </section>
+                        <section class="blog-content">
+                            <p>Blog 1 content</p>
+                        </section>
+                        <section class="user">
+                            <p>username</p>
+                        </section>
+                    </article>
+                </section>
         </main>
         <!-- Footer -->
         <footer id="blog-footer">
             <p>
-                <a><span class="bold">portfolio: </span></a><a href="https://petecodes4u.github.io/PJS-Portfolio/">PJS-portfolio</a>
+                <a><span class="bold">portfolio: </span></a><a
+                    href="https://petecodes4u.github.io/PJS-Portfolio/">PJS-portfolio</a>
             </p>
             <p>
                 <a><span class="bold">blog: </span>PC4U Blog</a>
@@ -76,7 +50,6 @@
             </p>
         </footer>
         <script src="./assets/js/blog.js"></script>
-      </body>
-  </div>
-  
+    </body>
+</div>
 </html>
