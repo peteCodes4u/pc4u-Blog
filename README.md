@@ -8,7 +8,7 @@ This project has been created to create text posts that can be created by the us
 
 - [Usage](#usage)
 - [Credits](#credits)
-- [Tests](#Front End Manual Tests)
+- [Tests](#Tests)
 
 ## Link to Website
 https://petecodes4u.github.io/pc4u-Blog/
@@ -30,7 +30,7 @@ The intended usage of this application is to generate blog posts from the inform
 - User prompt to collect another employee.
 
 
-## Front End Manual Tests
+## Tests
  
  **Feature - User form**
  
