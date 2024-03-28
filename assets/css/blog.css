@@ -5,8 +5,9 @@
 /* formats the body of the blog posts page */
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-image: linear-gradient(to left, #d5853a, #743ad5);
+    background-image: linear-gradient(to left, #c2630b, #361968);
     margin: 0;
+    /* background-image: url('../images/tchaikovsky-sm.png'); */
 }
 
 /* formats the header section */
@@ -73,7 +74,7 @@ main {
 .blogPosts {
     flex: 4;
     flex-direction: column;
-    background-image: linear-gradient(to left, #d5853a, #743ad5);
+    /* background-image: linear-gradient(to left, #d5853a, #743ad5); */
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -91,6 +92,7 @@ article {
     border-width: 5px;
     border-image-source: linear-gradient(to right,#d5853a, #743ad5 );
     box-shadow: 2px 3px 20px; 
+    background-image: linear-gradient(to right, #f0e7de, #c1a4f3);
 }
 
 
@@ -180,6 +182,10 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;    
+}
+
+.dark article {
+    background-image: linear-gradient(to left, #3b1a01, #120130);
 }
 
 .dark .blog-title, .dark .blogPosts {
